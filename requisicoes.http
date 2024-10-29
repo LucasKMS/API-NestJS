@@ -1,0 +1,29 @@
+POST  http://localhost:3000/usuario
+Content-Type: application/json
+
+{
+  "nome": "Cleitin da silva",
+  "email": "CleitinDaSilvaSauro@email.com",
+  "senha": "1234567891"
+}
+
+###
+GET http://localhost:3000/usuario
+
+###
+GET http://localhost:3000/usuario/1
+
+###
+GET http://localhost:3000/usuario/email/CleitinDaSilvaSauo@email.com
+
+###
+PATCH  http://localhost:3000/usuario/6
+Content-Type: application/json
+
+{
+  "email": "CleitinDaSilvaSauro@email.com" 
+
+}
+
+###
+DELETE http://localhost:3000/usuario/1
